@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Matter ;
+}
+
+html,body{
+    width: 100%;
+    min-height: 100%;
+
+}
+
+
+#main{
+    width: 100%;
+}
+
+#home{
+    width: 100%;
+    min-height: 100vh;
+    
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 50px;
+    
+
+}
+#nav img{
+    width: 200px;
+}
+#nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 1vw;
+    letter-spacing: -1px;
+}
+
+#nav #right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#nav i{
+
+    /* margin-top: 3px ; */
+    font-size: 24px;
+}
+#home #homeMain{
+    width:  100%;
+    padding: 13vw 15vw;
+    
+}
+#homeMain h1{
+    font-weight: 400;
+    letter-spacing: -0.1vw;
+    font-size: 1.35vw;
+}
+#homeMain h1::selection{
+    color: white;
+    background-color: #000000;
+    
+} 
+
+#homeMain .headings h1:hover{
+    color: black;
+}
+.headings{
+    display: flex;
+    gap: 40px;
+}
+#homeMain .headings h1{
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    font-size: 7vw;
+    font-weight: 900;
+    letter-spacing: -7px;
+}
+
+#homeLast {
+    padding: 1vw 15vw;
+}
+#homeLast p {
+    width: 70%;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 55px;
+}
+#homeLast p::selection{
+    background-color: black;
+    color: aliceblue;
+}
+
+#mid{
+    padding: 10vw 15vw;
+}
+.fheading>h1{
+    font-size: 4vw;
+    font-weight: 400;
+    line-height: 1;
+    
+}
+
+.fheading h1::selection{
+    background-color: black;
+    color: aliceblue;
+}
+.fheading>h1:nth-child(2){
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+#mainImages{
+    width: 100%;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    height: 100vh;
+    margin-top: 5vw;
+    display: flex;
+}
+#mainLeft{
+    width: 45%;
+    height: inherit;
+    overflow: hidden;
+
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    width: 100%;
+    height: inherit;
+}
+.content h1::selection{
+    background-color: black;
+    color: aliceblue;
+}
+
+.content h1{
+    font-size: 2.5vw;
+    font-weight: 400;
+    letter-spacing: -0.1vw;
+}
+.content h3{
+    font-size: 1.1vw;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.content h3::selection{
+    background-color: black;
+    color: aliceblue;
+}
+
+.content h4{
+    margin-top: 25px;
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 1vw;
+}
+.content h4::selection{
+    background-color: black;
+    color: aliceblue;
+}
+
+
+#mainRight{
+    width: 45%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: right;
+}
+
+#mainRight .images{
+    width: 90%;
+    height: 90%;
+    
+    
+} 
+#mainRight .images img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+} 
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn button{
+    padding: 1vw 1.5vw;
+    font-size: 1vw;
+    border-radius: 100px;
+    border: 2px solid rgb(140, 132, 132);
+    background-color: white;
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+
+#footer{
+    width: 100%;
+    padding: 5vw 15vw;
+}
+#footer h1{
+    font-size: 3vw;
+    font-weight: 500;
+    width: 40%;
+    letter-spacing: -0.1vw;
+}
+#footer h1::selection{
+    background-color: black;
+    color: white;
+}
+
+#footer p{
+    margin-top: 40px;
+    font-size: 1vw;
+    width: 40%;
+    font-weight: 500;
+    line-height: 40px;
+}
+#footer p::selection{
+    background-color: black;
+    color: white;
+}
+#slides{
+    padding: 3vw 10vw;
+   display: flex;
+   justify-content: space-between;
+   
+}
+.slide {
+    width: 30%;
+}
+
+.slide .img{
+    width: 100%;
+    height: 400px;
+}
+
+.slide .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.slide .tag{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 40px 0;
+    border: 1px solid grey;
+    width: fit-content;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+.slide .tag::selection{
+    background-color: black;
+    color: white;
+}
+.slide h3{
+    font-size: 1.2vw;
+}
+.slide h3::selection{
+    background-color: black;
+    color: white;
+}
